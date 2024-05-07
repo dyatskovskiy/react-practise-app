@@ -1,0 +1,14 @@
+.wrapper {
+  height: 84px;
+  display: flex;
+  padding: 6px 0;
+}
+
+.subWrapper {
+  padding-top: 19px;
+  padding-bottom: 25px;
+  margin-left: 19px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}

@@ -1,0 +1,9 @@
+* {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+}

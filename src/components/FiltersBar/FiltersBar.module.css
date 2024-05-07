@@ -1,0 +1,9 @@
+.wrapper {
+  display: flex;
+}
+.filterBtn {
+  padding: 8px 12px;
+  color: #97979b;
+  background-color: transparent;
+  border: none;
+}

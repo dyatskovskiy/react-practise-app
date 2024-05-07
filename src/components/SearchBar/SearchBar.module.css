@@ -1,0 +1,41 @@
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.16;
+  margin-bottom: 12px;
+}
+
+.fieldWrapper {
+  position: relative;
+  margin-bottom: 14px;
+}
+
+.searchField {
+  display: inline;
+  width: 100%;
+  padding: 10px 12px 10px 44px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  border: none;
+  border-radius: 16px;
+  background: #f7f7f8;
+}
+
+.searchIcon {
+  color: #c3c3c6;
+  position: absolute;
+  left: 12px;
+  top: 8px;
+}
+
+.listButton {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  border: none;
+  background-color: transparent;
+}
+.listIcon {
+  color: #c3c3c6;
+}

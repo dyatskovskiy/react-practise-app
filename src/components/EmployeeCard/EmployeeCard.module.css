@@ -1,0 +1,28 @@
+.cardWrapper {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.image {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+}
+
+.infoWrapper {
+}
+
+.name {
+  color: #050510;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+.position {
+  color: #55555c;
+  font-size: 13px;
+  line-height: 1.23;
+}
