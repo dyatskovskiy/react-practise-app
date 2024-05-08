@@ -6,6 +6,8 @@ const filtersSlice = createSlice({
     inputValue: "",
     filter: "all",
     sortType: "alphabet",
+    isLoading: false,
+    error: null,
   },
   reducers: {
     setInputValue(state, action) {

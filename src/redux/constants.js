@@ -1,4 +1,4 @@
-const filters = {
+export const filters = {
   all: "all",
   design: "design",
   analytics: "analytics",
@@ -7,7 +7,7 @@ const filters = {
   android: "android",
 };
 
-const sort = {
+export const sort = {
   alph: "alphabet",
   birth: "date",
 };

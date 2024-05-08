@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { fetchAll } from "./operations";
+import { fetchAll, fetchFiltered } from "./operations";
 
 const employeesSlice = createSlice({
   name: "employees",
@@ -22,6 +22,18 @@ const employeesSlice = createSlice({
       .addCase(fetchAll.rejected, (state, action) => {
         state.error = action.payload;
         state.isLoading = false;
+      })
+      .addCase(fetchFiltered.pending, (state, action) => {
+        state.isLoading = true;
+      })
+      .addCase(fetchFiltered.fulfilled, (state, action) => {
+        state.isLoading = false;
+        state.error = null;
+        state.list = action.payload;
+      })
+      .addCase(fetchFiltered.rejected, (state, action) => {
+        state.isLoading = false;
+        state.error = action.payload;
       });
   },
 });

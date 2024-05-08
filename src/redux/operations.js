@@ -16,3 +16,16 @@ export const fetchAll = createAsyncThunk(
     }
   }
 );
+
+export const fetchFiltered = createAsyncThunk(
+  "employees/fetchFiltered",
+  async (filter, thunkAPI) => {
+    try {
+      const response = await axios.get(`/users?__example=${filter}`);
+
+      return response.data.items;
+    } catch (error) {
+      return thunkAPI.rejectWithValue(error.message);
+    }
+  }
+);
