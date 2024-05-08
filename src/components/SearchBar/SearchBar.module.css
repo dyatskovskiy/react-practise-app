@@ -20,6 +20,7 @@
   border: none;
   border-radius: 16px;
   background: #f7f7f8;
+  caret-color: #6534ff;
 }
 
 .searchIcon {
@@ -27,6 +28,15 @@
   position: absolute;
   left: 12px;
   top: 8px;
+  transition: color ease-in 200ms;
+}
+
+.searchField:focus {
+  outline: none;
+}
+
+.searchField:focus + .searchIcon {
+  color: #050510;
 }
 
 .listButton {

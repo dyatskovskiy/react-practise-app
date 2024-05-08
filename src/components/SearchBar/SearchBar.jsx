@@ -17,8 +17,6 @@ export const SearchBar = () => {
       <h1 className={css.title}>Поиск</h1>
 
       <div className={css.fieldWrapper}>
-        <LuSearch className={css.searchIcon} size={24} />
-
         <input
           className={css.searchField}
           type="text"
@@ -26,6 +24,8 @@ export const SearchBar = () => {
           value={inputValue}
           onChange={(e) => handleInputChange(e.target.value)}
         />
+
+        <LuSearch className={css.searchIcon} size={24} />
 
         <button className={css.listButton}>
           <TbListTree className={css.listIcon} size={24} />
