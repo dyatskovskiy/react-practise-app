@@ -3,6 +3,8 @@ import css from "./EmployeesList.module.css";
 
 import { EmployeeCard } from "../EmployeeCard/EmployeeCard";
 import { selectInputValue } from "../../redux/selectors";
+import { SearchError } from "../SearchError/SearchError";
+
 export const EmployeesList = ({ employees }) => {
   const inputValue = useSelector(selectInputValue);
 
@@ -22,6 +24,8 @@ export const EmployeesList = ({ employees }) => {
           </li>
         );
       })}
+
+      {visibleEmployees.length === 0 && <SearchError />}
     </ul>
   );
 };
